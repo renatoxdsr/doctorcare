@@ -29,14 +29,14 @@ header {
     margin-left: auto;
     margin-top: 4.1rem;
 }
-h4 {
+header h4 {
     /*px is fixed// rem is relative*/
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 1.6rem;
 }
 
-h1 {
+header h1 {
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
@@ -45,7 +45,7 @@ h1 {
     /* border: 1px solid red; */
 }
 
-p {
+header p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -54,7 +54,7 @@ p {
 
 }
 
-button {
+header button {
     background-color: var(--primary-color);
     border: none;
     border-radius: 4rem;
@@ -80,10 +80,29 @@ button {
     margin-left: auto;
 
 }
+header img {
+    width: 26.4rem;
+    display:block;
+    margin-inline: auto;
+    object-position: 0 2rem;
+}
+/*ADDING A TAG HTML IN CSS*/
+/*CREATING THE GREEN COLOR UNDER THE IMG*/
+header::before{
+    content: "";
+    width: 100vw;
+    height: 108rem;
+    background-color: var(--brand-light);
+    display: block;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 /*stats*/
 
-.stats{
+header .stats{
     width: 32.7rem;
     padding-block: 4rem;
 
@@ -99,7 +118,7 @@ button {
     padding-top: 4rem;
 }
 
-.stat h3{
+header .stat h3{
     font-size: 4.8rem;
     color: var(--headline);
     line-height: 130%;
@@ -108,18 +127,10 @@ button {
 
 }
 
-.stat p {
+header .stat p {
     margin: 0;
     color: var(--primary-color);
     font-size: 1.6rem;
     line-height: 150%;
 
-}
-
-header img {
-    width: 26.4rem;
-    display:block;
-
-    margin-inline: auto;
-    object-position: 0 2rem;
 }
