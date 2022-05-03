@@ -49,12 +49,33 @@ p {
     font-weight: 400;
     color: var(--paragraph);
     margin-bottom: 3.2rem;
+
 }
 
 button {
     background-color: var(--primary-color);
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 4rem;
     margin-bottom: 6rem;
+
+    height: 6.2rem;
+    width: 26.3rem;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    /*move the children*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    /*diplay flex change the centering of the button*/
+    /*use margin to set it*/
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
