@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 :root {
     --primary-color:#00856F;
@@ -14,6 +15,11 @@
     --nav-height: 7.2rem;
     font-size: 62.5%; /*1rem = 10px*/
 
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 body {
     font-family: 'DM Sans';
@@ -31,7 +37,7 @@ body {
 /*CREATING THE GREEN COLOR UNDER THE IMG*/
 header::before{
     content: "";
-    width: 100vw;
+    width: 100%;
     height: calc(108rem + var(--nav-height));
     background-color: var(--brand-light);
     display: block;
@@ -161,3 +167,5 @@ nav.scroll svg:nth-child(1) path{
 nav.scroll svg:nth-child(2) path {
     stroke:white;
 }
+
+/*==========Navigation ==*/
