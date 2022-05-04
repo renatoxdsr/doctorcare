@@ -33,6 +33,11 @@ body {
     padding-inline: 2.4rem;
     
 }
+
+ul{
+    list-style: none;
+}
+
 /*ADDING A TAG HTML IN CSS*/
 /*CREATING THE GREEN COLOR UNDER THE IMG*/
 header::before{
@@ -168,4 +173,88 @@ nav.scroll svg:nth-child(2) path {
     stroke:white;
 }
 
-/*==========Navigation ==*/
+/*==========Navigation menu expanded ==*/
+body.menu-expanded {
+    overflow: hidden;
+}
+.menu,
+.close-menu{
+    opacity: 0;
+    visibility: hidden;
+
+}
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menu-expanded .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body.menu-expanded nav{
+    position: relative;
+}
+/*.menu ul:nth-child(1)*/
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-top: 6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menu .button{
+    background: #ffffff;
+    border-radius: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--primary-color);
+    
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+body.menu-expanded .logo {
+    position: relative;
+    /*jus using relative can allow use z-index*/
+    z-index: 100;
+    
+}
+body.menu-expanded .logo  path{
+    fill:white;
+    
+}
+
+body.menu-expanded .logo  path {
+    stroke:white;
+}
