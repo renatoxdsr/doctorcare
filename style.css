@@ -26,6 +26,8 @@ body {
     font-size: 1.6rem;
     text-align: center;
 
+    overflow: overlay;
+
 }
 .wrapper {
     width: 37.5rem;
@@ -153,13 +155,12 @@ nav{
     left: 50%;
     transform: translateX(-50%);
 }
-
 nav .wrapper{
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
-nav.scroll {
+nav .scroll {
     background: var(--primary-color);
     width: 100vw;
 }
@@ -169,16 +170,27 @@ nav.scroll svg:nth-child(1) path{
     
 }
 
-nav.scroll svg:nth-child(2) path {
+nav.scroll button path {
     stroke:white;
 }
 
+nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 /*==========Navigation menu expanded ==*/
 body.menu-expanded {
     overflow: hidden;
 }
+/*apply for all except to*/
+body.menu-expanded > :not(nav){
+    display: none;
+}
+
 .menu,
-.close-menu{
+.close-menu,
+body.menu-expanded .open-menu {
     opacity: 0;
     visibility: hidden;
 
@@ -244,17 +256,18 @@ body.menu-expanded nav{
     gap: 3.2rem;
 }
 
-body.menu-expanded .logo {
+body.menu-expanded .logo,
+body.menu-expanded button {
     position: relative;
     /*jus using relative can allow use z-index*/
     z-index: 100;
     
 }
-body.menu-expanded .logo  path{
+body.menu-expanded .logo path{
     fill:white;
     
 }
 
-body.menu-expanded .logo  path {
+body.menu-expanded button  path {
     stroke:white;
 }
