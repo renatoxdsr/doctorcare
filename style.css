@@ -207,7 +207,9 @@ body.menu-expanded .close-menu {
     opacity: 1;
     visibility: visible;
 }
-
+.menu{
+    transform: translateY(100%);
+}
 body.menu-expanded .menu {
     position: fixed;
     top: 0;
@@ -216,6 +218,11 @@ body.menu-expanded .menu {
 
     width: 100vw;
     height: 100vh;
+    padding-top: var(--nav-height);
+
+    transition: transform 400ms;
+    transform: translateY(0);
+    
 }
 
 body.menu-expanded nav{

@@ -17,3 +17,9 @@ function openMenu() {
 function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
+
+
+/*Creating an object in JS*/
+
+/*Scroll Reveal library*/
+ScrollReveal().reveal('#home');
