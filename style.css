@@ -46,8 +46,39 @@ body {
 ul{
     list-style: none;
 }
+
+img {
+    max-width: 100%;
+}
+
 section{
     padding-block: 10rem;
+}
+
+section header h4{
+    /*px is fixed// rem is relative*/
+    font-size: 1.4rem;
+    font-weight:700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--primary-color);
+
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+
+}
+
+section header h1{
+    font-size: 3.4rem;
+    color: var(--headline);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+section .content p{
+    font-weight:400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--paragraph);
 }
 /*ADDING A TAG HTML IN CSS*/
 /*CREATING THE GREEN COLOR UNDER THE IMG*/
@@ -288,7 +319,7 @@ body.menu-expanded button  path {
 
 /*services*/
 
-#services header h4{
+#services h4{
     font-size: 14px;
     line-height: 150%;
 
@@ -299,7 +330,7 @@ body.menu-expanded button  path {
     margin-bottom: 1.6rem;
 }
 
-#services header h2{
+#services h2{
     font-size: 3rem;
     line-height: 3.9rem;
 
@@ -328,8 +359,17 @@ body.menu-expanded button  path {
 .card h3{
     margin-block: 1.6rem;
 }
-
-
-
 /*====ABOUT=====*/
+
+#about {
+    text-align: left;
+    background: var(--brand-beige)
+}
+#about h2{
+    margin-bottom: 2.4rem;
+}
+#about .content p {
+    margin-top: 2.4rem;
+    margin-bottom: 6rem;
+}
 
