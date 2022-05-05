@@ -5,7 +5,7 @@
 function onScroll(){
     if(scrollY > 0 ){
         navagation.classList.add('scroll')
-    } else {
+    }else{
         navagation.classList.remove('scroll')
     }
 }
@@ -22,4 +22,15 @@ function closeMenu() {
 /*Creating an object in JS*/
 
 /*Scroll Reveal library*/
-ScrollReveal().reveal('#home');
+ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+
+
+}).reveal(`#home, 
+#home img, 
+#home .stats, 
+#services, 
+#services header,
+#services .card`);

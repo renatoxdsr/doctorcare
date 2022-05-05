@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*crtl a - crtl k - crtl 1*/
+/*close all the class-id*/
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +51,7 @@ section{
 }
 /*ADDING A TAG HTML IN CSS*/
 /*CREATING THE GREEN COLOR UNDER THE IMG*/
-header::before{
+#home::before{
     content: "";
     width: 100%;
     height: calc(108rem + var(--nav-height));
@@ -154,27 +156,25 @@ header::before{
 /*====NAVIGATION===*/
 nav{
     display: flex;
-    
-    height: var(--nav-height);
-
     position: fixed;
+    height:var(--nav-height);
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
+
+    z-index: 100;
 }
 nav .wrapper{
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
-nav .scroll {
+nav.scroll {
     background: var(--primary-color);
-    width: 100vw;
+    
 }
 
-nav.scroll svg:nth-child(1) path{
-    fill:white;
-    
+nav.scroll .logo path{
+    fill:white;  
 }
 
 nav.scroll button path {
@@ -225,9 +225,9 @@ body.menu-expanded .menu {
     
 }
 
-body.menu-expanded nav{
+/* body.menu-expanded nav{
     position: relative;
-}
+} */
 /*.menu ul:nth-child(1)*/
 .first {
     display: flex;
@@ -328,4 +328,8 @@ body.menu-expanded button  path {
 .card h3{
     margin-block: 1.6rem;
 }
+
+
+
+/*====ABOUT=====*/
 
