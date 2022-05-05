@@ -14,6 +14,7 @@
     --paragraph: hsl(210, 9%, 31%);
     --brand-beige: hsl(39, 100%, 97%);
     --brand-light: hsl(148, 23%, 89%);
+    --brando-dark: hsl(170, 100%, 14%);
 
     --bg-light: hsl(148, 23%, 89%);
     --nav-height: 7.2rem;
@@ -80,6 +81,36 @@ section .content p{
     line-height: 150%;
     color: var(--paragraph);
 }
+.button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4rem;
+    margin-bottom: 6rem;
+
+    padding: 1.6rem 3.2rem;
+    
+    
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    /*move the children*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    /*diplay flex change the centering of the button*/
+    /*use margin to set it*/
+    text-decoration: none;
+    transition: background 200ms;
+}
+.button:hover{
+    background-color: var(--brando-dark)
+
+}
 /*ADDING A TAG HTML IN CSS*/
 /*CREATING THE GREEN COLOR UNDER THE IMG*/
 #home::before{
@@ -121,29 +152,7 @@ section .content p{
 
 }
 #home button {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 4rem;
-    margin-bottom: 6rem;
-
-    height: 6.2rem;
-    width: 26.3rem;
-
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
-
-    /*move the children*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-
-    /*diplay flex change the centering of the button*/
-    /*use margin to set it*/
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: auto;
 
 }
 #home img {
@@ -373,3 +382,27 @@ body.menu-expanded button  path {
     margin-bottom: 6rem;
 }
 
+/*=======CONTACT=======*/
+
+#contact {
+    text-align: left;
+
+}
+#contact header {
+    margin-bottom: 3.2rem;
+
+}
+#contact ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+#contact ul li{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#contact .button {
+    margin-top: 4rem;
+}
