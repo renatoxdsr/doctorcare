@@ -396,6 +396,8 @@ body.menu-expanded button  path {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+
+    margin-bottom: 3.2rem;
 }
 #contact ul li{
     display: flex;
@@ -405,4 +407,34 @@ body.menu-expanded button  path {
 
 #contact .button {
     margin-top: 4rem;
+}
+
+
+/*=======FOOTER======*/
+
+footer{
+    background-color: var(--primary-color);
+    padding: 6rem;
+
+   
+    text-align: left;
+    color: white;
+}
+footer .logo {
+    display: inline-block;
+    margin-bottom: 2.4rem;
+}
+footer .logo svg{
+    width: 23.6rem;
+    height: 3.1rem;
+}
+
+footer .logo path{
+    fill: white;
+}
+
+footer p{
+    color: var(--brand-beige);
+    line-height: 2;
+
 }
