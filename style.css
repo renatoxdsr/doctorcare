@@ -528,7 +528,7 @@ footer .social-links {
     section{
         padding-block: 16rem;
     }
-    section h2{
+    section header h2{
         font-size: 4rem;
         line-height: 5.2rem;
 
@@ -742,6 +742,17 @@ footer .social-links {
     /*------Contact----*/
 
     #contact .wrapper {
-        
+        grid-template-columns: 1fr 57.5rem;
+        grid-template-areas: 'A B';
+        gap: 6.7rem;
+
+    }
+    #contact img{
+        width: 80%;
+
+    }
+
+    #contact h2{
+        width: 40.4rem;
     }
 }
